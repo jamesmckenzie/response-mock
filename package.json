@@ -36,6 +36,8 @@
     "path-to-regexp": "^2.2.1"
   },
   "jest": {
-    "roots": ["src"]
+    "roots": ["src"],
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   }
 }
