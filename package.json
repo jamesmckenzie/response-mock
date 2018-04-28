@@ -11,7 +11,8 @@
     "test": "jest",
     "lint": "eslint src index.js",
     "build":
-      "rimraf dist/ && babel ./ -d dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files"
+      "rimraf dist/ && babel ./ -d dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "prepublish": "yarn lint && yarn test && yarn build"
   },
   "files": ["dist"],
   "devDependencies": {
