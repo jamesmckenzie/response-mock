@@ -1,0 +1,10 @@
+{
+  "name": "mock-response",
+  "version": "1.0.0",
+  "description":
+    "A simple library built on Express to programatically define mock endpoint responses",
+  "main": "dist/index.js",
+  "repository": "https://github.com/jamesmckenzie/mock-response",
+  "author": "James McKenzie",
+  "license": "MIT"
+}
