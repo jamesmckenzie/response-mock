@@ -1,10 +1,40 @@
 {
   "name": "mock-response",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description":
-    "A simple library built on Express to programatically define mock endpoint responses",
+    "A simple library built on Express to programmatically define mock endpoint responses",
   "main": "dist/index.js",
   "repository": "https://github.com/jamesmckenzie/mock-response",
-  "author": "James McKenzie",
-  "license": "MIT"
+  "author": "James McKenzie <jamesmck1987@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src index.js",
+    "build":
+      "rimraf dist/ && babel ./ -d dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files"
+  },
+  "files": ["dist"],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
+    "jest": "^22.4.3",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "path-to-regexp": "^2.2.1"
+  },
+  "jest": {
+    "roots": ["src"]
+  }
 }
