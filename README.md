@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/jamesmckenzie/mock-response.svg?branch=master)](https://travis-ci.org/jamesmckenzie/mock-response)
+[![Build Status](https://travis-ci.org/jamesmckenzie/response-mock.svg?branch=master)](https://travis-ci.org/jamesmckenzie/response-mock)
 
-# mock-response
+# response-mock
+
 A simple library built on Express to programatically define mock endpoint responses
